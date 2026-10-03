@@ -9,7 +9,7 @@ import type { Theme } from '@/types';
 import { STORAGE_KEY_THEME } from '@/utils/constants';
 
 type ResolvedTheme = 'light' | 'dark';
-type AppliedTheme = ResolvedTheme | 'white';
+type AppliedTheme = ResolvedTheme | 'white' | 'mellow';
 
 interface ThemeState {
   theme: Theme;
@@ -30,7 +30,7 @@ const resolveAutoTheme = (): AppliedTheme => {
 };
 
 const normalizeResolvedTheme = (theme: AppliedTheme): ResolvedTheme => {
-  return theme === 'dark' ? 'dark' : 'light';
+  return theme === 'dark' || theme === 'mellow' ? 'dark' : 'light';
 };
 
 const resolveTheme = (theme: Theme): AppliedTheme => {
@@ -51,6 +51,11 @@ const applyTheme = (resolved: AppliedTheme) => {
 
   if (resolved === 'white') {
     document.documentElement.setAttribute('data-theme', 'white');
+    return;
+  }
+
+  if (resolved === 'mellow') {
+    document.documentElement.setAttribute('data-theme', 'mellow');
     return;
   }
 

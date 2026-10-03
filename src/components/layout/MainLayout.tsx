@@ -304,6 +304,17 @@ const THEME_CARDS: Array<{
       textMuted: '#9c958d',
     },
   },
+  {
+    key: 'mellow',
+    labelKey: 'theme.mellow',
+    colors: {
+      bg: '#151310',
+      card: '#1e1b17',
+      border: '#35302a',
+      text: '#e9e3da',
+      textMuted: 'linear-gradient(90deg, #8fb573 0 32%, #958c7f 32% 100%)',
+    },
+  },
 ];
 
 export function MainLayout() {
@@ -1070,7 +1081,7 @@ export function MainLayout() {
             >
               {theme === 'auto'
                 ? headerIcons.autoTheme
-                : theme === 'dark'
+                : theme === 'dark' || theme === 'mellow'
                   ? headerIcons.moon
                   : theme === 'white'
                     ? headerIcons.whiteTheme

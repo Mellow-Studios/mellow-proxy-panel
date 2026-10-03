@@ -227,7 +227,8 @@ button.quotaMessageAction {
   color: #526379;
 }
 
-:global([data-theme='dark']) .elitePlanValue {
+:global([data-theme='dark']) .elitePlanValue,
+:global([data-theme='mellow']) .elitePlanValue {
   color: #c3d3e4;
 }
 

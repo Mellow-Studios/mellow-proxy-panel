@@ -116,7 +116,8 @@
   }
 }
 
-:global([data-theme='dark']) .featuredCard .cardTitleIcon {
+:global([data-theme='dark']) .featuredCard .cardTitleIcon,
+:global([data-theme='mellow']) .featuredCard .cardTitleIcon {
   background: #fff;
 }
 

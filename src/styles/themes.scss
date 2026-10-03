@@ -240,6 +240,110 @@
   --viz-failure: #cf4b3a;
 }
 
+[data-theme='mellow'] {
+  color-scheme: dark;
+  caret-color: var(--primary-color);
+
+  --bg-secondary: #151310;
+  --bg-primary: #1e1b17;
+  --bg-tertiary: #272320;
+  --bg-hover: color-mix(in srgb, var(--bg-tertiary) 95%, var(--text-primary));
+  --bg-quinary: color-mix(in srgb, var(--bg-secondary), var(--bg-primary));
+  --bg-error-light: color-mix(in srgb, var(--error-color) 7%, transparent);
+  --floating-surface: var(--bg-primary);
+  --floating-shadow: 0 12px 32px -12px rgb(0 0 0 / 0.6);
+
+  --text-primary: #e9e3da;
+  --text-secondary: #a89f92;
+  --text-tertiary: #958c7f;
+  --text-quaternary: var(--text-tertiary);
+  --text-muted: var(--text-tertiary);
+
+  --border-color: #35302a;
+  --border-secondary: #2a2621;
+  --border-primary: #4a443c;
+  --border-hover: #5c554a;
+
+  --primary-color: #8fb573;
+  --primary-hover: #9dc282;
+  --primary-active: #9dc282;
+  --primary-contrast: #100e0c;
+
+  --success-color: #8fb573;
+  --quota-medium-color: #c9a35f;
+  --warning-color: #c9a35f;
+  --error-color: #cd7060;
+  --danger-color: var(--error-color);
+  --info-color: var(--text-secondary);
+
+  --warning-bg: color-mix(in srgb, var(--warning-color) 12%, transparent);
+  --warning-border: color-mix(in srgb, var(--warning-color) 40%, transparent);
+  --warning-text: var(--warning-color);
+
+  --success-badge-bg: color-mix(in srgb, var(--success-color) 12%, transparent);
+  --success-badge-text: var(--success-color);
+  --success-badge-border: color-mix(in srgb, var(--success-color) 40%, transparent);
+
+  --failure-badge-bg: color-mix(in srgb, var(--error-color) 12%, transparent);
+  --failure-badge-text: color-mix(in srgb, var(--error-color) 80%, #fbf7f0);
+  --failure-badge-border: color-mix(in srgb, var(--error-color) 40%, transparent);
+
+  --count-badge-bg: #100e0c;
+  --count-badge-text: var(--text-secondary);
+
+  --shadow: 0 0 0 0 transparent;
+  --shadow-lg: 0 0 0 0 transparent;
+
+  --radius-md: 8px;
+
+  --primary-8: color-mix(in srgb, var(--primary-color) 8%, transparent);
+  --primary-10: color-mix(in srgb, var(--primary-color) 10%, transparent);
+  --primary-30: color-mix(in srgb, var(--primary-color) 30%, transparent);
+  --amber-color: #c9a35f;
+  --amber-text: var(--amber-color);
+  --amber-10: color-mix(in srgb, var(--amber-color) 12%, transparent);
+  --amber-30: color-mix(in srgb, var(--amber-color) 40%, transparent);
+  --destructive-color: var(--error-color);
+  --destructive-10: color-mix(in srgb, var(--destructive-color) 12%, transparent);
+  --destructive-30: color-mix(in srgb, var(--destructive-color) 40%, transparent);
+  --muted-bg: #100e0c;
+  --muted-foreground: var(--text-secondary);
+  --accent-bg: var(--bg-tertiary);
+
+  --glass-blur: 0px;
+  --glass-backdrop-filter: none;
+  --glass-filter: none;
+  --glass-bg: var(--bg-primary);
+  --glass-bg-secondary: var(--bg-secondary);
+  --glass-border: var(--border-color);
+
+  --viz-success: #8fb573;
+  --viz-failure: #cd7060;
+
+  ::selection {
+    background: color-mix(in srgb, var(--primary-color) 25%, transparent);
+    color: #fbf7f0;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+
+  .main-header .header-actions,
+  .main-header .mobile-sidebar-actions {
+    background: var(--bg-primary);
+    box-shadow: none;
+  }
+
+  .main-header .language-menu-popover,
+  .main-header .theme-menu-popover {
+    border-color: var(--border-primary);
+    background: var(--floating-surface);
+    box-shadow: var(--floating-shadow);
+  }
+}
+
 @media (max-width: 768px),
   (prefers-reduced-motion: reduce),
   (prefers-reduced-transparency: reduce) {
