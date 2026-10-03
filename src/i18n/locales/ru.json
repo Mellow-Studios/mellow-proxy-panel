@@ -1559,6 +1559,7 @@
     "sort_label": "Сортировка",
     "sort_default": "По умолчанию",
     "sort_soonest": "Сначала ближайшее восстановление",
+    "show_emails": "Показать адреса электронной почты",
     "meta_credentials": "{{count}} учётных данных",
     "meta_loaded": "{{count}} загружено",
     "meta_attention": "{{count}} требуют внимания",

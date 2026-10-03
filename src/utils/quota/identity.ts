@@ -22,6 +22,17 @@ export function getQuotaDisplayName(file: AuthFileItem): string {
   return identity ? `${file.name} · ${identity}` : file.name;
 }
 
+/**
+ * The local part stops at `-`: the backend joins filename segments with it, as in
+ * `claude-<sha8>-<email>.json`, so a wider match would swallow the prefix.
+ */
+const EMAIL_LOCAL_PART = /[A-Za-z0-9._%+]+(?=@[A-Za-z0-9-]+\.[A-Za-z0-9])/g;
+
+/** Mask every email in a credential label to its first character, keeping the domain. */
+export function maskEmails(label: string): string {
+  return label.replace(EMAIL_LOCAL_PART, (localPart) => `${localPart.charAt(0)}***`);
+}
+
 /** Resolve a cache identity back to the physical filename used by file mutations. */
 export function getQuotaCacheFileName(key: string): string {
   const separatorIndex = key.indexOf(QUOTA_IDENTITY_SEPARATOR);

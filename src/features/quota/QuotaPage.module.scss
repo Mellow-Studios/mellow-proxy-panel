@@ -119,6 +119,14 @@
   }
 }
 
+.toolbarEnd {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  min-width: 0;
+}
+
 .sort {
   flex: 0 0 auto;
   min-width: 148px;

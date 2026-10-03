@@ -31,6 +31,7 @@ export const MAX_AUTH_FILE_SIZE = 10 * 1024 * 1024;
 // 本地存储键名
 export const STORAGE_KEY_AUTH = 'cli-proxy-auth';
 export const STORAGE_KEY_THEME = 'cli-proxy-theme';
+export const STORAGE_KEY_SHOW_EMAILS = 'cli-proxy-show-emails';
 export const STORAGE_KEY_LANGUAGE = 'cli-proxy-language';
 
 // 语言配置

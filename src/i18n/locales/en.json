@@ -1556,6 +1556,7 @@
     "sort_label": "Sort",
     "sort_default": "Default",
     "sort_soonest": "Soonest recovery",
+    "show_emails": "Show emails",
     "meta_credentials": "{{count}} credentials",
     "meta_loaded": "{{count}} loaded",
     "meta_attention": "{{count}} need attention",

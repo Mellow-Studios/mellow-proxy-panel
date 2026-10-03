@@ -1,3 +1,4 @@
+> This is the Mellow Studios fork; read MELLOW.md first. Upstream's instructions follow.
 # Repository Guidelines
 
 ## Project Scope & Structure
