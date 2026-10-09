@@ -6,9 +6,9 @@ the themed, pinned management panel of the studio's subscription proxy,
 `Mellow-Studios/mellow-proxy`. It is one patch set carried on upstream release
 tags. Nothing here is filed upstream.
 
-- Version: `1.25.2-mellow.1`
-- Upstream base: tag `v1.25.2`, commit `752e0ee`
-- Last sync: 2026-10-02
+- Version: `1.25.6-mellow.1`
+- Upstream base: tag `v1.25.6`, commit `5aa1ad6`
+- Last sync: 2026-10-08
 - Install, proxy config and deploy: the MellowBox record, repository
   `Mellow-Studios/mellowbox`; MellowOps record `content/projects/mellowbox/`
 

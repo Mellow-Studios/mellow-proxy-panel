@@ -1556,6 +1556,7 @@
     "sort_label": "정렬",
     "sort_default": "기본값",
     "sort_soonest": "가장 빠른 복구순",
+    "show_emails": "이메일 표시",
     "meta_credentials": "자격 증명 {{count}}개",
     "meta_loaded": "{{count}}개 로드됨",
     "meta_attention": "{{count}}개 주의 필요",
@@ -1820,6 +1821,7 @@
     "light": "양모 종이",
     "white": "순백",
     "dark": "다크",
+    "mellow": "Mellow",
     "auto": "시스템 설정 따름"
   },
   "sidebar": {
